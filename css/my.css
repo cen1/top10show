@@ -1,0 +1,55 @@
+.italic {
+    text-decoration: italic;
+}
+
+body {
+    background-color: #1B1A1A;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+#container {
+    
+    background-image: url('../img/top10thumba.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.quotes {
+    color: #B5B5B5;
+}
+.quotes p {
+    text-decoration: italic;
+}
+
+.rochaknost {
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    position: fixed;
+}
+.rochaknost img {
+    height: 50%;
+    width: 50%;
+}
+
+.top10list {
+    border-radius: 5px;
+    background-color: #373737;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.remarks {
+    text-decoration: italic;
+}
