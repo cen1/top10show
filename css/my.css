@@ -51,3 +51,12 @@ h1 {
 .remarks {
     text-decoration: italic;
 }
+
+@media only screen and (max-width: 1000px) {
+    .rochaknost {
+        position: relative;
+    }
+    .social {
+        position: relative;
+    }
+}
