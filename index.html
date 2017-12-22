@@ -51,6 +51,23 @@
     <link href="css/colors/default-color.css" rel="stylesheet"><!-- alternate style end -->
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/snowstorm.js"></script>
+
+    <script>
+        function checkFestivities() {
+            var now = new Date();
+            var currentMonth = now.getMonth();
+
+            if (currentMonth==0 || currentMonth==11) {
+                document.getElementById("rockstars").src="img/rochaknost_holidays.png"
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            checkFestivities();
+        }, false);
+    </script>
+
 </head>
 <body>
 
@@ -102,6 +119,31 @@
                 <p class="remarks"></p>
             </div>
             -->
+
+            <div class="top10list">
+                <div style="text-align: center">
+                    <h3>Top 10: Christmas Movies</h3>
+                    <p>December 19, 2017</p>
+                </div>
+                <ol>
+                    <li>It's a Wonderful Life</li>
+                    <li>National Lampoon's Christmas Vacation</li>
+                    <li>Scrooged</li>
+                    <li>How the Grinch Stole Christmas</li>
+                    <li>Elf</li>
+                    <li>A Christmas Carol</li>
+                    <li>A Christmas Story</li>
+                    <li>Die Hard</li>
+                    <li>Love Actually</li>
+                    <li>Home Alone</li>
+                </ol>
+                <div style="text-align: right">
+                    <audio controls>
+                        <source src="http://podone.noxsolutions.com/launchpod/schmoesknow/mp3/TheTop10-ChristmasMovies1.mp3" type="audio/mpeg">
+                    </audio> 
+                </div>
+                <p class="remarks">Is this toothbrush approved by the American Dental Association?</p>
+            </div>
 
             <div class="top10list">
                 <div style="text-align: center">
@@ -1033,6 +1075,7 @@
         <div class="col-md-4 col-xs-12">
             <div style="margin-top: 10rem; text-align: center" class="quotes">
                 <h3>QUOTES</h3>
+                <p>People gonna be mad at us. People gonna write letters to the government! - John Rocha</p>
                 <p>Done and done! - John Rocha</p>
                 <p>I am not getting as much bang on this wood as I used to. - John Rocha</p>
                 <p>I like to be dominated - John Rocha</p>
@@ -1045,7 +1088,7 @@
     </div>
 </div>
 <div class="rochaknost">
-    <img src="img/rochaknost.png" style="float: right"/>
+    <img id="rockstars" src="img/rochaknost.png" style="float: right"/>
 </div>
 <div class="social">
     <a href="https://www.facebook.com/groups/thetop10show" target="_blank"><i class="fa fa-facebook fa-2x fa-social"></i> Top 10 Show</a><br />
